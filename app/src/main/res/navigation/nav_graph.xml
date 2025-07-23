@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.flaxstudio.taskplanner.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_taskFragment"
+            app:destination="@id/taskFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_projectFragment"
+            app:destination="@id/projectFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_collectionFragment"
+            app:destination="@id/collectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.flaxstudio.taskplanner.fragments.SearchFragment"
+        android:label="fragment_search"
+        android:transitionName="home_to_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_projectFragment"
+            app:destination="@id/projectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskFragment"
+        android:name="com.flaxstudio.taskplanner.fragments.TaskFragment"
+        android:label="fragment_task"
+        tools:layout="@layout/fragment_task" >
+        <argument
+            android:name="isCreating"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="projectId"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <argument
+            android:name="taskId"
+            app:argType="long"
+            android:defaultValue="0L" />
+    </fragment>
+    <fragment
+        android:id="@+id/projectFragment"
+        android:name="com.flaxstudio.taskplanner.fragments.ProjectFragment"
+        android:label="fragment_project"
+        tools:layout="@layout/fragment_project" >
+        <action
+            android:id="@+id/action_projectFragment_to_taskFragment"
+            app:destination="@id/taskFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <argument
+            android:name="project_id"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectionFragment"
+        android:name="com.flaxstudio.taskplanner.fragments.CollectionFragment"
+        android:label="fragment_collection"
+        tools:layout="@layout/fragment_collection" />
+</navigation>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "468633020759",
+    "project_id": "task-planner-71c50",
+    "storage_bucket": "task-planner-71c50.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468633020759:android:94b80ab43aef5c11263612",
+        "android_client_info": {
+          "package_name": "com.flaxstudio.taskplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468633020759-pg9o57b4ejg0rkop955ndgrta1g087a6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flaxstudio.taskplanner",
+            "certificate_hash": "b0967cc93b9a623455009e9d19aa5500bfcd3c99"
+          }
+        },
+        {
+          "client_id": "468633020759-vnk43aqksok6ab8vs4sbr1007olska0o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLLoqz6YHB6cMJQbfrb_sUfWYLtk-NYv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468633020759-rr2h1mk7kgqisdj9qgmrns14pr3oqa9q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

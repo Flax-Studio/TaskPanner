@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <color name="black_600">#9A000000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="smoke">#F1F1F1</color>
+
+<!--      Green Family -->
+    <color name="green_600">#26A69A</color>
+    <color name="green_500">#28BFB1</color>
+    <color name="green_200">#BDE1DF</color>
+    <color name="green_100">#D8F1EE</color>
+
+<!--    Orange Family -->
+    <color name="orange_100">#FFF7EF</color>
+    <color name="orange_200">#FFEAD7</color>
+    <color name="orange_600">#F8B679</color>
+    <color name="orange_900">#FF9430</color>
+
+
+<!--    Red Family -->
+    <color name="red_100">#FFECEC</color>
+    <color name="red_300">#FFD2D2</color>
+    <color name="red_600">#F87979</color>
+    <color name="red_900">#D31E1B</color>
+
+
+
+<!--    Blue Family -->
+    <color name="blue_700">#1E7EE4</color>
+    <color name="blue_200">#D2E8FF</color>
+    <color name="blue_100">#EAF4FF</color>
+    <color name="blue_900">#312052</color>
+
+
+
+
+
+
+<!--    ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<!--    Purple theme-->
+    <color name="purple_100">#F0ECFF</color>
+    <color name="purple_200">#DBD1FF</color>
+    <color name="purple_600">#6E4BFF</color>
+
+
+
+
+    <color name="purple_700">#4CAF50</color>
+    <color name="teal_200">#00106A</color>
+
+
+    <color name="blue">#318AE3</color>
+    <color name="grey">#B3B3B3</color>
+
+    <color name="temp_color">#407BFF</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#407BFF</color>
+
+
+
+</resources>
