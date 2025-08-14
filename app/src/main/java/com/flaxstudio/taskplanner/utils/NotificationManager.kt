@@ -1,5 +1,6 @@
 package com.flaxstudio.taskplanner.utils
 
+import android.annotation.SuppressLint
 import android.app.AlarmManager
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -25,6 +26,7 @@ class NotificationManager {
     private val dManager = DateTimeManager()
 
 
+    @SuppressLint("ScheduleExactAlarm")
     fun addNotification(contextApp: Context, task: ProjectTask) {
 
         Log.i(TAG, " Creating Start Time Intent")

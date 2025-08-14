@@ -7,18 +7,18 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:468633020759:android:94b80ab43aef5c11263612",
+        "mobilesdk_app_id": "1:468633020759:android:dae159c44f869f99263612",
         "android_client_info": {
           "package_name": "com.flaxstudio.taskplanner"
         }
       },
       "oauth_client": [
         {
-          "client_id": "468633020759-pg9o57b4ejg0rkop955ndgrta1g087a6.apps.googleusercontent.com",
+          "client_id": "468633020759-4vembirol38k1e17012l25tq6uqgb0rq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.flaxstudio.taskplanner",
-            "certificate_hash": "b0967cc93b9a623455009e9d19aa5500bfcd3c99"
+            "certificate_hash": "68860ebefa8b0dd6a8d387ad8d72cb8b8b3d3589"
           }
         },
         {
