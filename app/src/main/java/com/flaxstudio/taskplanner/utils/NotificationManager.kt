@@ -29,6 +29,17 @@ class NotificationManager {
     @SuppressLint("ScheduleExactAlarm")
     fun addNotification(contextApp: Context, task: ProjectTask) {
 
+        // Check for exact alarm permission on Android S+ (API 31+)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            val alarmManager = contextApp.getSystemService(Context.ALARM_SERVICE) as AlarmManager
+            if (!alarmManager.canScheduleExactAlarms()) {
+                Log.w(TAG, "Cannot schedule exact alarms - permission not granted")
+                // Handle the case where exact alarm permission is not granted
+                // This might involve requesting the permission or using inexact alarms
+                return
+            }
+        }
+
         Log.i(TAG, " Creating Start Time Intent")
         // Create an intent for the Start time notification with a unique request code
         val startTimeIntent = Intent(contextApp, StartTimeReceiver::class.java)
@@ -42,7 +53,7 @@ class NotificationManager {
             contextApp,
             task.id,
             startTimeIntent,
-            0
+            PendingIntent.FLAG_IMMUTABLE
         )
 
 
@@ -58,7 +69,7 @@ class NotificationManager {
 
         // adding some offset to end id
         val endTimePendingIntent = PendingIntent.getBroadcast(
-            contextApp, task.id + 1000000, endTimeIntent, 0
+            contextApp, task.id + 1000000, endTimeIntent, PendingIntent.FLAG_IMMUTABLE
         )
 
         val alarmManager = contextApp.getSystemService(Context.ALARM_SERVICE) as AlarmManager
